@@ -1,0 +1,17 @@
+# CLI
+
+brew 'atuin'
+brew 'zsh'
+
+# Kubernetes
+
+brew 'k9s'
+
+# Terraform
+brew 'terragrunt'
+brew 'opentofu'
+brew 'tflint'
+
+# ZSH
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
