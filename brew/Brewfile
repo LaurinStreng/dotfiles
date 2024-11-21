@@ -6,11 +6,16 @@ brew 'zsh'
 # Kubernetes
 
 brew 'k9s'
+brew 'kustomize'
 
 # Terraform
 brew 'terragrunt'
 brew 'opentofu'
 brew 'tflint'
+
+# Ansible
+brew 'ansible-lint'
+brew 'ansible'
 
 # ZSH
 brew 'zsh-autosuggestions'
