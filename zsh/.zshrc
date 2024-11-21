@@ -8,10 +8,6 @@ alias k="kubectl"
 alias tf="terraform"
 alias g="git"
 
-# Auto Completion
-
-source <(kubectl completion zsh)
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -85,6 +81,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+eval "$(atuin init zsh)"
+
+# Auto Completion
+source <(kubectl completion zsh)
+eval "$(task --completion zsh)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -132,6 +136,3 @@ echo "#################################################"
 echo "#                  I AM ROOT                     #"
 echo "#################################################"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-eval "$(atuin init zsh)"

@@ -20,3 +20,6 @@ brew 'ansible'
 # ZSH
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
+
+# Other
+brew 'go-task'
