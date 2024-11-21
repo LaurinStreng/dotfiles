@@ -10,6 +10,7 @@ fi
 echo "Executing Brew Bundle"
 cd brew/ || exit
 brew bundle
+cd ..
 
 # Copy zsh conf
 
