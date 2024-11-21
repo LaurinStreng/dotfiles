@@ -88,6 +88,7 @@ eval "$(atuin init zsh)"
 # Auto Completion
 source <(kubectl completion zsh)
 eval "$(task --completion zsh)"
+terraform -install-autocomplete
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
