@@ -7,8 +7,10 @@ brew 'zsh'
 
 brew 'k9s'
 brew 'kustomize'
+brew 'kubernetes-cli'
 
 # Terraform
+brew 'terraform'
 brew 'terragrunt'
 brew 'opentofu'
 brew 'tflint'
@@ -20,6 +22,10 @@ brew 'ansible'
 # ZSH
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
+brew 'zsh-history-substring-search'
 
 # Other
 brew 'go-task'
+
+# Go
+brew 'go'
