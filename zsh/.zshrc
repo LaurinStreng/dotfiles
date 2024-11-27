@@ -90,6 +90,11 @@ source <(kubectl completion zsh)
 eval "$(task --completion zsh)"
 terraform -install-autocomplete
 
+# GO
+
+export GOPATH=$HOME/go
+PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
