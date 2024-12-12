@@ -16,3 +16,9 @@ cd ..
 
 cp zsh/.zshrc $HOME/.zshrc
 echo "zshrc is copyed to home dir"
+
+
+# Copy tmux conf
+
+mkdir -p $HOME/.tmux
+cp tmux/.tmux.conf $HOME/.tmux/.tmux.conf
