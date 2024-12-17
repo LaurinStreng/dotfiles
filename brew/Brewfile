@@ -12,6 +12,7 @@ brew 'kustomize'
 brew 'terragrunt'
 brew 'opentofu'
 brew 'tflint'
+brew 'tfsec'
 
 # Ansible
 brew 'ansible-lint'
