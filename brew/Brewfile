@@ -9,6 +9,10 @@ brew 'k9s'
 brew 'kustomize'
 brew 'kubernetes-cli'
 
+# Kubernetes Talos
+brew 'talosctl'
+brew 'talhelper'
+
 # Terraform
 brew 'terraform'
 brew 'terragrunt'
@@ -30,3 +34,7 @@ brew 'go-task'
 
 # Go
 brew 'go'
+
+# Container
+brew 'docker'
+brew 'docker-compose'
