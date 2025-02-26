@@ -8,6 +8,7 @@ brew 'zsh'
 brew 'k9s'
 brew 'kustomize'
 brew 'kubernetes-cli'
+brew 'helm'
 
 # Kubernetes Talos
 brew 'talosctl'
