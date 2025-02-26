@@ -95,6 +95,9 @@ terraform -install-autocomplete
 export GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
+# For GPG Signing
+export GPG_TTY=$(tty)
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
