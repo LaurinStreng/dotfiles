@@ -33,6 +33,7 @@ brew 'zsh-history-substring-search'
 
 # Other
 brew 'go-task'
+brew 'jq'
 
 # Go
 brew 'go'
