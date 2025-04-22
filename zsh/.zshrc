@@ -87,8 +87,10 @@ eval "$(atuin init zsh)"
 
 # Auto Completion
 source <(kubectl completion zsh)
+source <(helm completion zsh)
 eval "$(task --completion zsh)"
-terraform -install-autocomplete
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terraform/1.9.8/bin/terraform terraform
 
 # GO
 

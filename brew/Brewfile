@@ -3,6 +3,9 @@
 brew 'atuin'
 brew 'zsh'
 
+# AWS
+brew 'aws-vault'
+
 # Kubernetes
 
 brew 'k9s'
