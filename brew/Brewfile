@@ -3,6 +3,9 @@
 brew 'atuin'
 brew 'zsh'
 
+# Dotfiles Management
+brew 'stow'
+
 # AWS
 brew 'aws-vault'
 
@@ -45,3 +48,7 @@ brew 'go'
 # Container
 brew 'docker'
 brew 'docker-compose'
+
+# Ldap Terminal UI
+
+brew 'godap'

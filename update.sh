@@ -12,13 +12,6 @@ cd brew/ || exit
 brew bundle
 cd ..
 
-# Copy zsh conf
+# Add Stow
 
-cp zsh/.zshrc $HOME/.zshrc
-echo "zshrc is copyed to home dir"
-
-
-# Copy tmux conf
-
-mkdir -p $HOME/.tmux
-cp tmux/.tmux.conf $HOME/.tmux/.tmux.conf
+stow . --dotfiles -t $HOME
