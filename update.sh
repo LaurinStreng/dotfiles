@@ -12,6 +12,7 @@ cd brew/ || exit
 brew bundle
 cd ..
 
-# Add Stow
+# Add Stow (Symlinking) for dotfiles
+# --dotfiles: Change dot- to . in the symlink
 
 stow . --dotfiles -t $HOME
