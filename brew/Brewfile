@@ -36,6 +36,7 @@ brew 'ansible'
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-history-substring-search'
+brew 'zsh-you-should-use'
 
 # Other
 brew 'go-task'
