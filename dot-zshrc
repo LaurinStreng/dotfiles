@@ -1,3 +1,6 @@
+# Cache brew prefix for performance
+BREW_PREFIX="/home/linuxbrew/.linuxbrew"
+
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias k="kubectl"
@@ -6,12 +9,8 @@ alias g="git"
 
 ZSH_THEME="agnoster"
 
-# Brew plugin source
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Brew environment
+eval "$($BREW_PREFIX/bin/brew shellenv)"
 
 plugins=(
     git
@@ -23,7 +22,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $BREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
+source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $BREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 eval "$(atuin init zsh)"
 
 # Auto Completion
@@ -33,15 +34,13 @@ eval "$(task --completion zsh)"
 autoload -U +X bashcompinit && bashcompinit
 
 # GO
-
 export GOPATH=$HOME/go
 PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # For GPG Signing
 export GPG_TTY=$(tty)
 
-# Startup ASCI Art
-
+# Startup ASCII Art
 echo "          .^. .  –"
 echo "         /: ||\`/ ~  ,"
 echo "       , [   &    /  y'"
